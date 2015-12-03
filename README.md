@@ -34,7 +34,7 @@ The `index` controller will just have the index route, displaying your
 homepage.  All `Entry`-related routes will go in the `entries` controller and all
 `Tag`-related routes will go in the `tags` controller.
 
-These are features (roughly equivilent to the routes you'll need) your app should offer:
+These are features (roughly equivalent to the routes you'll need) your app should offer:
 
 1. Show all entries
 2. Show a particular entry (by id)
@@ -106,9 +106,9 @@ Using [valid? and invalid?][valid_invalid] and the [errors][errors] methods,
 make sure you're handling your error cases gracefully.  It doesn't need to be
 perfect, but good error handling means:
 
-1. When a user makes a mistake or breaks some rule, they're informed
-2. The user is presented with an opportunity to correct the mistake, if possible
-3. The user is given as much guidance as possible about that they need to do to fix the error
+1. When a user makes a mistake or breaks some rule, they're informed.
+2. The user is presented with an opportunity to correct the mistake, if possible.
+3. The user is given as much guidance as possible about what they need to do to fix the error.
 
 ### Release 4: Style!  Style!  Style!
 
