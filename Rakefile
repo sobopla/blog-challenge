@@ -32,10 +32,10 @@ namespace :generate do
     end
   end
 
-  desc "Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_tasks"
+  desc "Create an empty migration in db/migrate, e.g., rake generate:migration NAME=create_users"
   task :migration do
     unless ENV.has_key?('NAME')
-      raise "Must specificy migration name, e.g., rake generate:migration NAME=create_tasks"
+      raise "Must specificy migration name, e.g., rake generate:migration NAME=create_users"
     end
 
     name     = ENV['NAME'].camelize
