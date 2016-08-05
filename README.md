@@ -1,12 +1,5 @@
 # Blog 1 Anonymous Blog
 
-## Learning Competencies
-
-* Use the MVC pattern in web applications with proper allocation of code and responsibilities to each layer
-* Model relationships in a relational database (one-to-one, one-to-many, many-to-many)
-* Use Active Record to create Associations between database tables
-* Use Active Record Validations
-
 ## Summary
 
 We're going to write a simple homepage with a blog.  This will be our first
@@ -112,8 +105,8 @@ perfect, but good error handling means:
 
 ### Release 4: Style!  Style!  Style!
 
-You might want to do the [Layout Drill: Proper Typesetting][proper formatting
-challenge] first, if you haven't.  But following the guidelines from that
+You might want to do the [Layout Drill: Proper Typesetting][proper formatting challenge]
+first, if you haven't.  But following the guidelines from that
 challenge, spruce up your blog design.
 
 Make it something you're proud to look at.
