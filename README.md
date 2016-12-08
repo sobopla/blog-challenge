@@ -29,12 +29,12 @@ homepage.  All `Entry`-related routes will go in the `entries` controller and al
 
 These are features (roughly equivalent to the routes you'll need) your app should offer:
 
-1. Show all entries
-2. Show a particular entry (by id)
-3. Create a new entry
-4. Edit an existing entry
-5. Delete an existing entry
-6. Show all entries with a given tag. (what will this URL look like? which controller will include this route?)
+1. A homepage that shows all entries
+2. A page that shows a particular entry based on id information passed in url. Each article title listed on the homepage should link to one of these URLs.
+3. A page where a new entry can be created.  A link to this page should exist on the home page (page #1)
+4. A page where an existing entry can be edited. A link to this edit page should exist on the page that displays a single entry (page #2)
+5. The ability to delete an entry from the page that shows a single entry (page #2)
+6. A page that shows all entries with a given tag. Everywhere a tag is listed, it should be a link to this page for that particular tag.  (What will this URL look like? Which controller will include this route?)
 
 Tags will be created via the `Entry`-creation form.
 
