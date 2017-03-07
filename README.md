@@ -40,8 +40,7 @@ Tags will be created via the `Entry`-creation form.
 
 ### Release 1: Models &amp; Validations
 
-Create all the necessary models and migrations to support the above.  You
-should have three models &mdash; what are they?
+Create all the necessary models and migrations to support the above.
 
 Add the appropriate validations to your models.  Read the [Rails guide to
 ActiveRecord validations][AR validations] for reference.
