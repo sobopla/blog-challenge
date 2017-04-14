@@ -51,7 +51,7 @@ database.  This means adding `NOT NULL` constraints to the migrations and the
 following validations to your ActiveRecord model:
 
 ```ruby
-class Entry < ActiveRecord::Base
+class Entry < ApplicationRecord
   validates :body, :presence => true
   validates :title, :presence => true
 end
