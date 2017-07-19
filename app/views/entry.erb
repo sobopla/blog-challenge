@@ -1,0 +1,39 @@
+<div class="container">
+  <h1>Welcome to Sinatra!</h1>
+  <% entry = Entry.find_by_id(params[:id]) %>
+  <p><b><%= entry.title %></b></p>
+  <p>Author: <%= entry.author %></p>
+  <p><%= entry.body %></p>
+
+  <table>
+    <tr>
+      <th>Tags</th>
+    </tr>
+    <% @tags = Tag.where("entry = ?", entry.id) %>
+    <% @tags.each do |tag| %>
+    <% tagname = Tagname.find_by_id(tag.tag) %>
+    <tr><td><a href="/tag/<%= tag.tag %>"><%= tagname.name %></a></td></tr>
+    <% end %>
+  </table>
+
+  <p></p>
+
+  <table>
+    <tr>
+      <th>File Description</th>
+      <th>File Location</th>
+    </tr>
+    <tr>
+      <td>This view file</td>
+      <td><code><%= __FILE__.gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The layout file</td>
+      <td><code><%= File.expand_path('../layout.erb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+    <tr>
+      <td>The current controller</td>
+      <td><code><%= File.expand_path('../../controllers/tags.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+    </tr>
+  </table>
+</div>

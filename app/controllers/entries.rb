@@ -1,4 +1,4 @@
-get '/entries' do
+get '/entry/:id' do
   # Look in app/views/entries.erb
-  erb :entries
+  erb :entry
 end
