@@ -1,6 +1,8 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <% entry = Entry.find_by_id(params[:id]) %>
+  <p><a href="/entry/edit/<%= entry.id %>">Edit this blog entry</a></p>
+  <p><a href="/entry/delete/<%= entry.id %>">Delete this blog entry</a></p>
   <p><b><%= entry.title %></b></p>
   <p>Author: <%= entry.author %></p>
   <p><%= entry.body %></p>
