@@ -14,6 +14,8 @@ gem 'thin'
 gem 'activerecord', '~> 5.0'
 gem 'activesupport', '~> 5.0'
 
+gem 'sinatra-activerecord'
+
 gem 'rake', '~> 12.0.0'
 
 gem 'shotgun'

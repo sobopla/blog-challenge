@@ -1,22 +1,8 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
-  <p><a href="entry/new">New blog entry</a></p>
-
-  <table>
-    <tr>
-      <th>Latest Blog Entries</th>
-    </tr>
-    <% @entries = Entry.all %>
-    <% @entries.each do |entry| %>
-    <tr><td><a href="entry/<%= entry.id %>"><%= entry.title %></a></td></tr>
-    <% @tags = Tag.where("entry = ?", entry.id) %>
-    <% @tags.each do |tag| %>
-    <% tagname = Tagname.find_by_id(tag.tag) %>
-    <tr><td>    Tag: <a href="tag/<%= tag.tag %>"><%= tagname.name %></a></td></tr>
-    <% end %>
-    <% end %>
-  </table>
+  <p>New blog entry</a></p>
+  <p>Placeholder for form</p>
 
   <p></p>
 

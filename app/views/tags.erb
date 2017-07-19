@@ -1,20 +1,14 @@
 <div class="container">
   <h1>Welcome to Sinatra!</h1>
   <p>Hello, world!</p>
-  <p><a href="entry/new">New blog entry</a></p>
 
   <table>
     <tr>
-      <th>Latest Blog Entries</th>
+      <th>Tag</th>
     </tr>
-    <% @entries = Entry.all %>
-    <% @entries.each do |entry| %>
-    <tr><td><a href="entry/<%= entry.id %>"><%= entry.title %></a></td></tr>
-    <% @tags = Tag.where("entry = ?", entry.id) %>
+    <% @tags = Tagname.all %>
     <% @tags.each do |tag| %>
-    <% tagname = Tagname.find_by_id(tag.tag) %>
-    <tr><td>    Tag: <a href="tag/<%= tag.tag %>"><%= tagname.name %></a></td></tr>
-    <% end %>
+    <tr><td><a href="tag/<%= tag.id %>"><%= tag.name %></a></td></tr>
     <% end %>
   </table>
 
@@ -35,7 +29,7 @@
     </tr>
     <tr>
       <td>The current controller</td>
-      <td><code><%= File.expand_path('../../controllers/index.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
+      <td><code><%= File.expand_path('../../controllers/tags.rb', __FILE__).gsub(Sinatra::Application.root, '') %></code></td>
     </tr>
   </table>
 </div>

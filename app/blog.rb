@@ -1,0 +1,8 @@
+require 'sinatra'
+require 'sinatra/activerecord'
+require './app/models/tagname.rb'
+require './app/models/tag.rb'
+require './app/models/entry.rb'
+require './app/controllers/index.rb'
+require './app/controllers/entries.rb'
+require './app/controllers/tags.rb'
