@@ -4,6 +4,18 @@
 
   <table>
     <tr>
+      <th>Tag</th>
+    </tr>
+    <% @tags = Tagname.all %>
+    <% @tags.each do |tag| %>
+    <tr><td><a href="tag/<%= tag.id %>"><%= tag.name %></a></td></tr>
+    <% end %>
+  </table>
+
+  <p></p>
+
+  <table>
+    <tr>
       <th>File Description</th>
       <th>File Location</th>
     </tr>

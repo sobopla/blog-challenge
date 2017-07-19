@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: blog-challenge_development
+  username: <%= ENV['USER'] %>
+  password: <%= ENV['USER'] %>
+  host: localhost
